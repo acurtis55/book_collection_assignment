@@ -28,7 +28,7 @@ RSpec.describe 'Creating a book', type: :feature do
 
   scenario 'valid publish date' do
     visit new_book_path
-    fill_in 'publishedDate', with: '01-01-2021'
+    fill_in 'published_date', with: '01-01-2021'
     click_on 'Create Book'
     visit books_path
     expect(page).to have_content('01-01-2021')

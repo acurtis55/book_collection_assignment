@@ -1,0 +1,2 @@
+module ShowdetailsHelper
+end
