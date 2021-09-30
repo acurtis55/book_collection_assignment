@@ -1,0 +1,26 @@
+<p id="notice"><%= notice %></p>
+<br>
+<h1>Are you sure you want to delete the book below?</h1>
+<td><%= link_to 'Destroy', @book, method: :delete, data: { confirm: 'Last chance...' } %></td>
+<p>
+  <strong>Title:</strong>
+  <%= @book.title %>
+</p>
+
+<p>
+  <strong>Author:</strong>
+  <%= @book.author %>
+</p>
+
+<p>
+  <strong>Price: $</strong>
+  <%= @book.price %>
+</p>
+
+<p>
+  <strong>Published_date:</strong>
+  <%= @book.published_date %>
+</p>
+
+<%= link_to 'Edit', edit_book_path(@book) %> |
+<%= link_to 'Back', books_path %>

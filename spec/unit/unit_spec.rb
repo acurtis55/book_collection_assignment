@@ -29,20 +29,5 @@ RSpec.describe Book, type: :model do
     subject.published_date = nil
     expect(subject).not_to be_valid
   end
-  # test 2 do
-  #   described_class.new(title: 'The Giver', author: 'Lois Lowry', price: 20, published_date: '1993-05-10')
-  # end
-  #
-  # it 'is valid with valid attributes' do
-  #   expect(test2).to be_valid
-  # end
-  #
-  # it 'is not valid without all attributes' do
-  #   test2.title = nil
-  #   test2.author = nil
-  #   test2.price = nil
-  #   test2.published_date = nil
-  #   expect(test2).not_to be_valid
-  # end
 
 end
